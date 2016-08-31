@@ -35,9 +35,8 @@ app.controller("DirsController", function ($scope, DirsService, $location) {
     }
 
     function getDirsByDir(currDir) {
-        currPath += currDir;
 
-        var servCall = DirsService.GetDirsByDir(currPath);
+        var servCall = DirsService.GetDirsByDir(currPath + currDir);
         servCall.then(function(d) {
             var data = d.data;
             //the reason I did that way is in the DirsAndFilesController
@@ -57,7 +56,7 @@ app.controller("DirsController", function ($scope, DirsService, $location) {
                 $scope.IntervalLabel = data.Interval;
                 $scope.MoreLabel = data.More;
             } else {
-                alert("Error while opening folder " + currPath + data.ErrorMessage);
+                alert("Error while opening folder " + currPath + currDir + data.ErrorMessage);
             }
         }, function(error) {
             console.log(error);
