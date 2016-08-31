@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Welcome";
+}
+<style>
+    
+</style>
+<h1 align="center">Server File Manager</h1>
+<body data-ng-app="APIModule">
+    <div ng-controller="DirsController">
+        <table class="center">
+            <tbody>
+                <tr>
+                    <td>
+                        <=10 MB
+                    </td>
+                    <td>
+                        >10 MB AND <50 MB
+                    </td>
+                    <td>
+                        >=50 MB
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>{{LessLabel}}</label>
+                    </td>
+
+                    <td>
+                        <label>{{IntervalLabel}}</label>
+                    </td>
+                    <td>
+                        <label>{{MoreLabel}}</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="margin-left: auto; margin-right: auto; text-align: center;">
+            <h3>
+                Current path is {{CurrPath}}
+            </h3>
+        </div>
+        <h2>Directories</h2>
+        <div>
+            <button ng-hide="IfDisk() || IfHome()" ng-click='GetDirsByDir("..")'>
+                Back
+            </button>
+            <button ng-hide="IfHome()" ng-click="HomeButton()">
+                Home
+            </button>
+        </div>
+        <table>
+            <tbody>
+                <tr class="clickable" data-ng-repeat="directory in Directories">
+                    <td ng-click="GetDirsByDir(directory)">
+                        {{directory}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+<script src="~/Scripts/angular.js"></script>
+<script src="~/Scripts/angular-route.js"></script>
+<script src="~/Scripts/MainPageScripts/Module.js"></script>
+<script src="~/Scripts/MainPageScripts/Service.js"></script>
+<script src="~/Scripts/MainPageScripts/Controller.js"></script>
