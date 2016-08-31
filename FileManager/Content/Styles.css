@@ -11,3 +11,13 @@ table, tr, td, th {
 tr.clickable {
     cursor: pointer;
 }
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}

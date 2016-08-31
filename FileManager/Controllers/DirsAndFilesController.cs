@@ -72,7 +72,7 @@ namespace FileManager.Controllers
                     long length = currFI.Length;
                     if (length <= 10485760)
                         dirsInfo.Less++;
-                    else if (length > 10485760 && length < 52428800)
+                    else if (length > 10485760 && length <= 52428800)
                         dirsInfo.Interval++;
                     else if (length >= 104857600)
                         dirsInfo.More++;

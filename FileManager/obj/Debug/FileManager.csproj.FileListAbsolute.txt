@@ -54,6 +54,5 @@ C:\Users\User\Desktop\Работа\Empeek\ApplicationProject\FileManager\FileMan
 C:\Users\User\Desktop\Работа\Empeek\ApplicationProject\FileManager\FileManager\FileManager\bin\System.Web.WebPages.Deployment.xml
 C:\Users\User\Desktop\Работа\Empeek\ApplicationProject\FileManager\FileManager\FileManager\bin\System.Web.WebPages.Razor.xml
 C:\Users\User\Desktop\Работа\Empeek\ApplicationProject\FileManager\FileManager\FileManager\bin\Antlr3.Runtime.pdb
-C:\Users\User\Desktop\Работа\Empeek\ApplicationProject\FileManager\FileManager\FileManager\obj\Debug\FileManager.csprojResolveAssemblyReference.cache
 C:\Users\User\Desktop\Работа\Empeek\ApplicationProject\FileManager\FileManager\FileManager\obj\Debug\FileManager.dll
 C:\Users\User\Desktop\Работа\Empeek\ApplicationProject\FileManager\FileManager\FileManager\obj\Debug\FileManager.pdb
